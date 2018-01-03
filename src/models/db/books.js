@@ -17,9 +17,12 @@ const db = require('./connection');
                 })
   }
 
-  function viewAll() {
+  function findAll() {
     return db.query(`SELECT * FROM books`)
     .catch(error => {
       console.error("Error while executing book.viewAll")
+      throw error
     })
   }
+
+  module.exports = { create, viewAll};
