@@ -1,0 +1,15 @@
+<% include headpartial.ejs %>
+<h1>Search Results:</h1>
+<% matchedBooks.forEach((book) => { %>
+  <div class="searchResultDiv">
+    <h3>Book Title: <a href="/book-details/"><%= book.title %></a> </h3>
+    <h3>Book author: <%= book.author %> </h3>
+    <h3>Book genre: <%= book.genre %> </h3>
+    <button class='btn btn-sucess edit'>Edit</button>
+    <button class='delete btn btn-danger'>Delete</button>
+  </div>
+<% }) %>
+
+
+
+<% include footerpartial.ejs %>

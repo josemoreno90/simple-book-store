@@ -1,0 +1,14 @@
+<% include headpartial %>
+
+
+<h1>Simple Store For Simple Books</h1>
+
+  <% include search_bar_partial %>
+  <% include modal_create_partial %>
+
+<% books.forEach(book => { %>
+  <% include home_partial.ejs %>
+
+<% }) %>
+
+<% include footerpartial %>
