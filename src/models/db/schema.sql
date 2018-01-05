@@ -4,5 +4,7 @@ CREATE TABLE books (
   id SERIAL,
   title TEXT,
   author TEXT,
-  genre TEXT
+  genre TEXT,
+  height TEXT,
+  publisher TEXT
 );

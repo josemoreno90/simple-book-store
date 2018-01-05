@@ -1,0 +1,68 @@
+body {
+  margin:0;
+  text-align: center;
+  margin-top: 10rem;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar p {
+  float: right;
+  display: block;
+  color: yellow;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+
+.searchResultDiv {
+  border: 2px solid black;
+  border-radius: 12px;
+  border-bottom: 6px solid blue;
+  background-color: lightgrey;
+}
+
+#searchBox {
+  border: 3px solid black;
+  border-radius: 12px;
+  border-bottom: 6px solid blue;
+  margin-bottom: 3%;
+}
+
+#createBookButton {
+  margin-bottom: 3%;
+}
+
+.delete, .edit {
+  margin-top: 1%;
+  margin-bottom: 2%;
+  margin-right: 1%;
+}
